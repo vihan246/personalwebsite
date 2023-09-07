@@ -1,6 +1,7 @@
 <template>
   <button
     class="group bg-transparent text-normal w-fit whitespace-nowrap hover:text-pop transition-all duration-500"
+    @click="routeToPage"
   >
     {{ text }}
     <span
@@ -9,6 +10,7 @@
   </button>
 </template>
 <script>
+import { useRouter } from "vue-router";
 export default {
   name: "SideBarButton",
   props: {
@@ -24,8 +26,9 @@ export default {
     },
   },
   setup(props) {
+    const router = useRouter();
     const routeToPage = () => {
-      this.$router.push(props.route);
+      router.push(props.route);
     };
 
     return {
