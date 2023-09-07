@@ -2,7 +2,7 @@
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 -960 960 960"
-    class="fill-normal w-16 h-16 transition"
+    class="fill-normal text-normal w-16 h-16 transition hover:fill-pop"
     :class="{ 'rotate-180': isOpen }"
     @click="onClick"
   >
@@ -17,20 +17,13 @@ export default {
   emits: ["click"],
   setup(_, { emit }) {
     const isOpen = ref(false);
-    const turn = ref(0);
     const onClick = () => {
       isOpen.value = !isOpen.value;
-      if (isOpen.value) {
-        turn.value = 180;
-      } else {
-        turn.value = 0;
-      }
       emit("click", isOpen);
     };
 
     return {
       onClick,
-      turn,
       isOpen,
     };
   },
