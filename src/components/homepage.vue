@@ -1,6 +1,6 @@
 <template>
   <div className="container bg-background items-center">
-    <h1 className="bg-black text-white">{{ welcome_msg }}</h1>
+    <h1 className="text-normal text-center">{{ welcome_msg }}</h1>
   </div>
 </template>
 <script>

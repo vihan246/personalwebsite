@@ -5,10 +5,10 @@ module.exports = {
   theme: {
     colors: {
       background: "#0C1618",
-      "background-med": "#3D5467",
-      "background-light": "#AFCBFF",
-      text: "#FEFAE0",
-      "text-pop": "#E9806E",
+      "blue-dark": "#3D5467",
+      "blue-light": "#AFCBFF",
+      normal: "#FEFAE0",
+      pop: "#E9806E",
     },
     extend: {},
   },
