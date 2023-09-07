@@ -1,4 +1,4 @@
-<template>
+<template className=" bg-background ">
   <homepage />
 </template>
 
