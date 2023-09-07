@@ -1,15 +1,17 @@
-<template className=" bg-background ">
-  <homepage />
+<template>
+  <div className="w-screen h-screen bg-background">
+    <HomePage />
+  </div>
 </template>
 
 <script>
-import homepage from "./components/homepage.vue";
+import HomePage from "./components/homepage.vue";
 import "./index.css";
 
 export default {
   name: "App",
   components: {
-    homepage,
+    HomePage,
   },
 };
 </script>
