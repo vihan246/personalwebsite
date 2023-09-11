@@ -22,11 +22,13 @@
 
   <div class="items-center h-full w-full bg-background flex justify-center">
     <SideBar />
-    <div class="container flex-col col-6">
+    <div class="container flex flex-col col-5">
       <h1 class="text-dark text-center w-full"></h1>
-      <SocialIcons />
     </div>
-    <div class="container flex-col col-6 overflow-y-scroll"></div>
+    <div class="container flex flex-col col-6 overflow-y-scroll"></div>
+    <div class="col-1 flex h-full flex-col-reverse justify-start py-2">
+      <SocialIcons vertical />
+    </div>
   </div>
 </template>
 <script>
