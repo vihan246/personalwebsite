@@ -25,7 +25,7 @@
     <div
       class="container h-full flex flex-col col-5 justify-start items-center"
     >
-      <div class="w-10/12 flex flex-col h-1/2 mt-24">
+      <div class="w-10/12 flex flex-col h-1/2 mt-24 items-center">
         <ProfileCard />
       </div>
     </div>
