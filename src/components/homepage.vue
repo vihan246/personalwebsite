@@ -24,6 +24,7 @@
     <SideBar />
     <div class="container flex-col col-6">
       <h1 class="text-dark text-center w-full"></h1>
+      <SocialIcons />
     </div>
     <div class="container flex-col col-6 overflow-y-scroll"></div>
   </div>
@@ -32,9 +33,10 @@
 import { ref } from "vue";
 import SideBar from "./sidebar/SideBar.vue";
 import TypeWriter from "./TypeWriter.vue";
+import SocialIcons from "./SocialIcons.vue";
 export default {
   name: "HomePage",
-  components: { SideBar, TypeWriter },
+  components: { SideBar, TypeWriter, SocialIcons },
   setup() {
     const landingStr = "Vihan Raj";
     const landingDisplay = ref("_");
