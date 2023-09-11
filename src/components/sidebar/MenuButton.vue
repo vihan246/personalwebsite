@@ -2,7 +2,7 @@
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 -960 960 960"
-    class="fill-normal text-normal w-12 h-12 transition duration-300 hover:fill-pop"
+    class="fill-dark text-dark w-12 h-12 transition duration-400 hover:fill-pop"
     :class="{ 'rotate-180': isOpen }"
     @click="onClick"
   >
@@ -15,6 +15,12 @@ import { ref } from "vue";
 export default {
   name: "MenuButton",
   emits: ["click"],
+  props: {
+    color: {
+      type: String,
+      default: "normal",
+    },
+  },
   setup(_, { emit }) {
     const isOpen = ref(false);
     const onClick = () => {

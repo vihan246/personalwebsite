@@ -5,7 +5,10 @@ import HomePage from "./components/homepage.vue";
 
 const router = createRouter({
   history: createWebHistory(),
-  routes: [{ path: "/", component: HomePage }],
+  routes: [
+    { path: "/", component: HomePage },
+    { path: "/home", component: HomePage },
+  ],
 });
 
 const app = createApp(App);

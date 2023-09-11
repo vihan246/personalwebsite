@@ -1,11 +1,11 @@
 <template>
   <button
-    class="group bg-transparent text-normal w-fit whitespace-nowrap hover:text-pop transition-all duration-500"
+    class="group bg-transparent text-light w-fit whitespace-nowrap hover:text-pop transition-all duration-500"
     @click="routeToPage"
   >
     {{ text }}
     <span
-      class="block max-w-0 group-hover:max-w-full h-0.5 bg-normal transition-all duration-500 group-hover:bg-pop"
+      class="block max-w-0 group-hover:max-w-full h-0.5 bg-light transition-all duration-500 group-hover:bg-pop"
     ></span>
   </button>
 </template>
