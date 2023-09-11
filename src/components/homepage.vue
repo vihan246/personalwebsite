@@ -5,10 +5,10 @@
   >
     <div
       v-if="showLanding"
-      class="h-full w-full flex justify-center items-center absolute top-0 left-0 z-50"
+      class="h-full w-full flex justify-center items-center absolute top-0 left-0 z-50 bg-background-dark"
     >
       <TypeWriter
-        class="text-dark text-center text-4xl"
+        class="text-light text-left text-4xl w-44"
         cursor
         text="Vihan Raj"
         @done="

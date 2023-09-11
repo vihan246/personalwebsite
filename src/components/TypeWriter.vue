@@ -104,7 +104,7 @@ export default {
           }, props.speed + (props.humanize ? Math.random() * 100 : 0));
         }
       } else if (props.delete === "type" && i > -1) {
-        // remove characters at the end one at a time.
+        // remove characters at the end one at a time.d
         displayStr.value = displayStr.value.substring(
           0,
           displayStr.value.length - 1
