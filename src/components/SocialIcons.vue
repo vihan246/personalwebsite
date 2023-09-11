@@ -1,5 +1,5 @@
 <template>
-  <div class="flex w-fit h-fit gap-2" :class="{ 'flex-col': vertical }">
+  <div class="flex w-fit h-fit gap-4" :class="{ 'flex-col': vertical }">
     <a
       href="https://github.com/vihan246"
       class="w-8 h-8 mx-4 group"

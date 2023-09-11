@@ -21,7 +21,7 @@
   </Transition>
 
   <div class="items-center h-full w-full bg-background flex justify-center">
-    <SideBar />
+    <div class="col-1 h-full w-1/12"><SideBar /></div>
     <div
       class="container h-full flex flex-col col-5 justify-start items-center"
     >
@@ -29,8 +29,8 @@
         <ProfileCard />
       </div>
     </div>
-    <div class="container flex flex-col col-6 overflow-y-scroll"></div>
-    <div class="col-1 flex h-full flex-col-reverse justify-start py-2">
+    <div class="container flex flex-col col-5 overflow-y-scroll"></div>
+    <div class="col-1 flex h-full flex-col-reverse justify-start py-4">
       <SocialIcons vertical />
     </div>
   </div>
