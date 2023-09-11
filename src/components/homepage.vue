@@ -7,7 +7,16 @@
       v-if="showLanding"
       class="h-full w-full flex justify-center items-center absolute top-0 left-0 z-50"
     >
-      <p class="text-dark text-center text-4xl">{{ landingDisplay }}</p>
+      <TypeWriter
+        class="text-dark text-center text-4xl"
+        cursor
+        text="Vihan Raj"
+        @done="
+          () => {
+            showLanding = false;
+          }
+        "
+      />
     </div>
   </Transition>
 
@@ -22,17 +31,14 @@
 <script>
 import { ref } from "vue";
 import SideBar from "./sidebar/SideBar.vue";
+import TypeWriter from "./TypeWriter.vue";
 export default {
   name: "HomePage",
-  components: { SideBar },
+  components: { SideBar, TypeWriter },
   setup() {
     const landingStr = "Vihan Raj";
     const landingDisplay = ref("_");
-    const showLanding = ref(false);
-    const typewriter = () => {
-      console.log("me");
-    };
-    typewriter();
+    const showLanding = ref(true);
     return { landingDisplay, showLanding, landingStr };
   },
 };
