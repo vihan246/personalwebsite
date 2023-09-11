@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <span> {{ displayStr }} </span>{{ cursorStr }}
-  </div>
+  <span> {{ displayStr }}{{ cursorStr }} </span>
 </template>
 <script>
 import { ref } from "vue";
@@ -81,7 +79,11 @@ export default {
       } else {
         blinkTimeElapsed = 0;
         cursorStr.value = "_";
-        multiTypeWriter();
+        if (props.text) {
+          multiTypeWriter();
+        } else if (props.repeats) {
+          cursorBlink(timeToBlink);
+        }
       }
     };
 

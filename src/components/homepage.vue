@@ -22,8 +22,12 @@
 
   <div class="items-center h-full w-full bg-background flex justify-center">
     <SideBar />
-    <div class="container flex flex-col col-5">
-      <h1 class="text-dark text-center w-full"></h1>
+    <div
+      class="container h-full flex flex-col col-5 justify-start items-center"
+    >
+      <div class="w-10/12 flex flex-col h-1/2 mt-24">
+        <ProfileCard />
+      </div>
     </div>
     <div class="container flex flex-col col-6 overflow-y-scroll"></div>
     <div class="col-1 flex h-full flex-col-reverse justify-start py-2">
@@ -36,9 +40,10 @@ import { ref } from "vue";
 import SideBar from "./sidebar/SideBar.vue";
 import TypeWriter from "./TypeWriter.vue";
 import SocialIcons from "./SocialIcons.vue";
+import ProfileCard from "./ProfileCard.vue";
 export default {
   name: "HomePage",
-  components: { SideBar, TypeWriter, SocialIcons },
+  components: { SideBar, TypeWriter, SocialIcons, ProfileCard },
   setup() {
     const landingStr = "Vihan Raj";
     const landingDisplay = ref("_");
