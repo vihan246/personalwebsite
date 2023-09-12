@@ -5,11 +5,11 @@
       :class="[open ? 'max-w-lg p-2 border-r-[1px]' : 'max-w-0 p-0 border-0']"
     >
       <div class="w-48 h-full flex flex-col justify-center items-center gap-5">
-        <SideBarButton text="Home" />
-        <SideBarButton text="Resume" />
-        <SideBarButton text="Work Experience" />
-        <SideBarButton text="Projects" />
-        <SideBarButton text="Activities" />
+        <UnderlineButton text="Home" />
+        <UnderlineButton text="Resume" route="./RESUME_Aug2023.pdf" />
+        <UnderlineButton text="Work Experience" />
+        <UnderlineButton text="Projects" />
+        <UnderlineButton text="Activities" />
       </div>
     </div>
     <MenuButton @click="onOpenClose($event)" />
@@ -18,11 +18,11 @@
 <script>
 import { ref } from "vue";
 import MenuButton from "./MenuButton.vue";
-import SideBarButton from "./SideBarButton.vue";
+import UnderlineButton from "../UnderlineButton.vue";
 
 export default {
   name: "SideBar",
-  components: { MenuButton, SideBarButton },
+  components: { MenuButton, UnderlineButton },
   setup() {
     const open = ref(false);
 
