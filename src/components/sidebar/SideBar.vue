@@ -5,14 +5,26 @@
       :class="[open ? 'max-w-lg p-2 border-r-[1px]' : 'max-w-0 p-0 border-0']"
     >
       <div class="w-48 h-full flex flex-col justify-center items-center gap-5">
-        <UnderlineButton text="Home" />
-        <UnderlineButton text="Resume" route="./RESUME_Aug2023.pdf" />
-        <UnderlineButton text="Work Experience" />
-        <UnderlineButton text="Projects" />
-        <UnderlineButton text="Activities" />
+        <UnderlineButton text="Home" @close="() => onOpenClose(false)" />
+        <UnderlineButton
+          text="Resume"
+          route="./RESUME_Aug2023.pdf"
+          @close="() => onOpenClose(false)"
+        />
+        <UnderlineButton
+          text="Work Experience"
+          @close="() => onOpenClose(false)"
+        />
+        <UnderlineButton text="Projects" @close="() => onOpenClose(false)" />
+        <UnderlineButton text="Activities" @close="() => onOpenClose(false)" />
+        <UnderlineButton
+          text="About Me"
+          @close="() => onOpenClose(false)"
+          route="/about"
+        />
       </div>
     </div>
-    <MenuButton @click="onOpenClose($event)" />
+    <MenuButton :isOpen="open" @click="onOpenClose($event)" />
   </div>
 </template>
 <script>
@@ -27,7 +39,7 @@ export default {
     const open = ref(false);
 
     const onOpenClose = (event) => {
-      open.value = event.value;
+      open.value = event;
     };
     return {
       open,

@@ -37,7 +37,8 @@ export default {
       default: false,
     },
   },
-  setup(props) {
+  emits: ["close"],
+  setup(props, { emit }) {
     const router = useRouter();
     const routeToPage = () => {
       if (props.route.startsWith("/")) {
@@ -45,6 +46,7 @@ export default {
       } else {
         window.open(props.route, "_blank");
       }
+      emit("close");
     };
 
     return {

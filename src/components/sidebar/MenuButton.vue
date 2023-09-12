@@ -11,26 +11,22 @@
 </template>
 
 <script>
-import { ref } from "vue";
 export default {
   name: "MenuButton",
   emits: ["click"],
   props: {
-    color: {
-      type: String,
-      default: "normal",
+    isOpen: {
+      type: Boolean,
+      required: true,
     },
   },
-  setup(_, { emit }) {
-    const isOpen = ref(false);
+  setup(props, { emit }) {
     const onClick = () => {
-      isOpen.value = !isOpen.value;
-      emit("click", isOpen);
+      emit("click", !props.isOpen);
     };
 
     return {
       onClick,
-      isOpen,
     };
   },
 };

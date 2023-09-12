@@ -8,14 +8,18 @@
       </div>
     </div>
     <div
-      class="container flex flex-col col-6 overflow-y-scroll no-scrollbar"
-    ></div>
+      class="container flex flex-col col-6 overflow-y-scroll no-scrollbar h-4/5"
+    >
+      <InfoSection title="Work Experience" />
+      <InfoSection title="Projects" />
+    </div>
   </div>
 </template>
 <script>
+import InfoSection from "./information/InfoSection.vue";
 import ProfileCard from "./ProfileCard.vue";
 export default {
   name: "HomePage",
-  components: { ProfileCard },
+  components: { ProfileCard, InfoSection },
 };
 </script>
