@@ -5,19 +5,40 @@
         <UnderlineButton :text="item.title" :route="item.link" secondary />
       </h3>
       <p class="text-dark text-sm">{{ item.shortDescription }}</p>
+      <div class="flex w-full p-1">
+        <UnderlineButton
+          v-for="(add, ind) in item.additionalLinks"
+          :key="add.id"
+          :index="ind"
+          :route="add.link"
+          :text="add.display"
+          secondary
+          class="text-sm mr-1 my-2"
+        />
+      </div>
     </div>
-    <div class="col-3 w-3/12 flex flex-row-reverse">
-      <span class="text-dark text-right text-sm"
+    <div class="col-3 w-3/12 flex flex-col">
+      <span class="text-dark text-right text-sm mb-2"
         >{{ item.startDate }} - {{ item.endDate }}</span
       >
+      <div class="flex flex-wrap flex-row-reverse w-full">
+        <TagPill
+          v-for="(tag, i) in item.tags"
+          :key="tag.id"
+          :tag="tag.display"
+          :index="i"
+          class="mx-1 my-1"
+        />
+      </div>
     </div>
   </div>
 </template>
 <script>
 import UnderlineButton from "../UnderlineButton.vue";
+import TagPill from "./TagPill.vue";
 export default {
   name: "InfoCard",
-  components: { UnderlineButton },
+  components: { UnderlineButton, TagPill },
   props: {
     item: {
       type: Object,

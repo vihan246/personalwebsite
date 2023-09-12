@@ -14,7 +14,7 @@
     </p>
     <UnderlineButton
       class="text-xl"
-      text="More about me >>"
+      text="More about me »"
       route="/about"
       secondary
     />

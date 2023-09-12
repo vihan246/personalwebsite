@@ -6,7 +6,14 @@
       "startDate": "05-01-2023",
       "endDate": "08-01-2023",
       "shortDescription": "Developed new features to improve the security and corruption detection of contract data uploading. Created new UI components, developed SCIM endpoints, and extended existing user permissions structures to allow for custom permissions management in product and with Okta SAML. Added logging and a user display for the customer's user settings.",
-      "link": "https://productiv.com/"
+      "link": "https://productiv.com/",
+      "additionalLinks": [
+        {
+          "display": "Okta SCIM Docs »",
+          "link": "https://developer.okta.com/docs/reference/scim/scim-20/"
+        }
+      ],
+      "tags": ["Node.JS", "Vue.JS", "TypeScript", "AWS", "JavaScript"]
     },
     {
       "title": "Full Stack SWE @ Haven",
@@ -14,7 +21,8 @@
       "startDate": "01-01-2023",
       "endDate": "04-01-2023",
       "shortDescription": "Haven is a startup using AI to make home renovations easier for home-owners and contractors. Built out a MVP as a part of the founding team, winning the USC TroyLabs DEMO pitch competition. Attended USC MEPC startup incubator sessions and investor meetings.",
-      "link": "https://www.joinhaven.io/"
+      "link": "https://www.joinhaven.io/",
+      "tags": ["Next.JS", "Tailwind", "SupaBase", "JavaScript"]
     },
     {
       "title": "Full Stack SWE Intern @ Productiv Inc.",
@@ -25,10 +33,11 @@
       "link": "https://productiv.com/",
       "additionalLinks": [
         {
-          "display": "Fyle",
-          "link": "https://www.fylehq.com/"
+          "display": "Fyle Docs »",
+          "link": "https://docs.fylehq.com/"
         }
-      ]
+      ],
+      "tags": ["Node.JS", "Vue.JS", "AWS", "JavaScript"]
     },
     {
       "title": "International Baccaleaureate Tutor @ Valdo Academics",
@@ -46,7 +55,8 @@
       "startDate": "04-01-2023",
       "endDate": "04-01-2023",
       "shortDescription": "MotionMuse helps users learn how to dance along to their favorite dances, whether a Tik Tok dance or well-defined choreography. Built during the LAHacks 2023 hackathon at UCLA in a group of three.",
-      "link": "https://devpost.com/software/motionmuse"
+      "link": "https://devpost.com/software/motionmuse",
+      "tags": ["Next.JS", "Tailwind", "Canvas2D", "TensorFlow"]
     },
     {
       "title": "Portal",
@@ -54,7 +64,8 @@
       "startDate": "04-01-2023",
       "endDate": "05-01-2023",
       "shortDescription": "A simplified adaptation of the game developed by Valve in 2007.",
-      "link": "https://github.com/vihan246/C/tree/main/Portal"
+      "link": "https://github.com/vihan246/C/tree/main/Portal",
+      "tags": ["C++", "SDL"]
     }
   ],
   "Activities": [{}, {}]

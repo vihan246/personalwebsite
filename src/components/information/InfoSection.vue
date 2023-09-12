@@ -7,6 +7,13 @@
       :index="index"
       :key="item.id"
     />
+    <UnderlineButton
+      v-if="isWork"
+      text="View full resume »"
+      route="./RESUME_Aug2023.pdf"
+      secondary
+      class="mb-4"
+    />
   </div>
 </template>
 
@@ -14,11 +21,12 @@
 import data from "../../assets/data.json";
 import InfoCard from "./InfoCard.vue";
 import Information from "../../modules/Information";
+import UnderlineButton from "../UnderlineButton.vue";
 import { ref } from "vue";
 
 export default {
   name: "InfoSection",
-  components: { InfoCard },
+  components: { InfoCard, UnderlineButton },
   props: {
     title: {
       type: String,
@@ -32,9 +40,10 @@ export default {
         items.value.push(new Information(exp));
       }
     }
-
+    const isWork = props.title === "Work Experience";
     return {
       items,
+      isWork,
     };
   },
 };

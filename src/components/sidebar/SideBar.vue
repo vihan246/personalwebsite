@@ -11,10 +11,6 @@
           route="./RESUME_Aug2023.pdf"
           @close="() => onOpenClose(false)"
         />
-        <UnderlineButton
-          text="Work Experience"
-          @close="() => onOpenClose(false)"
-        />
         <UnderlineButton text="Projects" @close="() => onOpenClose(false)" />
         <UnderlineButton text="Activities" @close="() => onOpenClose(false)" />
         <UnderlineButton
