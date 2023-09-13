@@ -86,5 +86,18 @@
       "tags": ["Java", "Android"]
     }
   ],
-  "Activities": [{}, {}]
+  "Activities": [
+    {
+      "title": "Social Chair @ USC Theta Tau",
+      "type": "main",
+      "startDate": "12-01-2021",
+      "endDate": "Present",
+      "shortDescription": "Theta Tau is the nation’s oldest and largest professional engineering society, aimed at the development of its members through the pillars of service, professionalism, and brotherhood. Currently in my second tenure as a social chair.",
+      "link": "https://www.uscthetatau.org/"
+    },
+    {
+      "title": "Member @ USC Racing Electrical",
+      "type": "main"
+    }
+  ]
 }

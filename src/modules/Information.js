@@ -16,7 +16,10 @@ export default class Information {
     this.title = title;
     this.type = type;
     this.startDate = dayjs(startDate, "DD-MM-YYYY").format("MMM YYYY");
-    this.endDate = dayjs(endDate, "DD-MM-YYYY").format("MMM YYYY");
+    this.endDate =
+      endDate === "Present"
+        ? "Present"
+        : dayjs(endDate, "DD-MM-YYYY").format("MMM YYYY");
     this.shortDescription = shortDescription;
     this.link = link;
     if (tags) {
