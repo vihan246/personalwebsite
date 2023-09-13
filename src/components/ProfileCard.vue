@@ -14,8 +14,8 @@
     </p>
     <UnderlineButton
       class="text-xl"
-      text="More about me »"
-      route="/about"
+      text="Resume »"
+      route="./RESUME_Aug2023.pdf"
       secondary
     />
   </div>
