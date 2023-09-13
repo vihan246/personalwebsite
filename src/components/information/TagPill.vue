@@ -1,6 +1,6 @@
 <template>
   <div
-    class="text-xs bg-dark text-light rounded-full px-2 w-fit h-fit whitespace-nowrap"
+    class="text-xs bg-pop-light text-dark rounded-lg px-3 py-1 w-fit h-fit whitespace-nowrap"
   >
     {{ tag }}
   </div>

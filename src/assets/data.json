@@ -42,10 +42,10 @@
     {
       "title": "International Baccaleaureate Tutor @ Valdo Academics",
       "type": "other",
-      "startDate": "05-01-2023",
-      "endDate": "08-01-2023",
-      "shortDescription": "",
-      "link": ""
+      "startDate": "11-01-2021",
+      "endDate": "07-01-2022",
+      "shortDescription": "Tutor teaching IB level computer science, economics, and math, as well as the SAT.",
+      "link": "https://www.valdoacademics.com/"
     }
   ],
   "Projects": [
@@ -63,9 +63,27 @@
       "type": "main",
       "startDate": "04-01-2023",
       "endDate": "05-01-2023",
-      "shortDescription": "A simplified adaptation of the game developed by Valve in 2007.",
+      "shortDescription": "A simplified adaptation of the game developed by Valve in 2007. This game was built using C++, with SDL powering the GUI. The game features five levels in which the player solves puzzles using the 'portal' gun.",
       "link": "https://github.com/vihan246/C/tree/main/Portal",
       "tags": ["C++", "SDL"]
+    },
+    {
+      "title": "Vue3 TypeWriter",
+      "type": "main",
+      "startDate": "08-01-2023",
+      "endDate": "09-01-2023",
+      "shortDescription": "A customizable Vue3 component that provides an inline typewriter effect, with functionality like allowing a list of strings, humanization, and more.",
+      "link": "https://github.com/vihan246/vue-typewriter",
+      "tags": ["Vue.JS", "JavaScript"]
+    },
+    {
+      "title": "SoCalBeachForLife",
+      "type": "other",
+      "startDate": "10-30-2022",
+      "endDate": "12-01-2022",
+      "shortDescription": "An Android app developed in a group of three, displays a map of all beaches within a defined radius with routing to a parking lot if desired. Also displays surrounding restaurants to each beach, with a usage of the Yelp API to display the menus.",
+      "link": "https://github.com/dwangman123/SoCalBeach4Life",
+      "tags": ["Java", "Android"]
     }
   ],
   "Activities": [{}, {}]

@@ -1,9 +1,23 @@
 <template>
   <div class="flex w-full h-fit my-4 rounded-md">
+    <div class="col-3 w-3/12 flex flex-col">
+      <span class="text-dark text-left text-sm mb-2 pt-0.5"
+        >{{ item.startDate }} - {{ item.endDate }}</span
+      >
+    </div>
     <div class="col-9 flex flex-col w-9/12">
       <h3 class="mb-2 text-large w-full">
         <UnderlineButton :text="item.title" :route="item.link" secondary />
       </h3>
+      <div class="flex flex-wrap w-full mb-2">
+        <TagPill
+          v-for="(tag, i) in item.tags"
+          :key="tag.id"
+          :tag="tag.display"
+          :index="i"
+          class="mx-1 my-1"
+        />
+      </div>
       <p class="text-dark text-sm">{{ item.shortDescription }}</p>
       <div class="flex w-full p-1">
         <UnderlineButton
@@ -14,20 +28,6 @@
           :text="add.display"
           secondary
           class="text-sm mr-1 my-2"
-        />
-      </div>
-    </div>
-    <div class="col-3 w-3/12 flex flex-col">
-      <span class="text-dark text-right text-sm mb-2"
-        >{{ item.startDate }} - {{ item.endDate }}</span
-      >
-      <div class="flex flex-wrap flex-row-reverse w-full">
-        <TagPill
-          v-for="(tag, i) in item.tags"
-          :key="tag.id"
-          :tag="tag.display"
-          :index="i"
-          class="mx-1 my-1"
         />
       </div>
     </div>

@@ -14,6 +14,13 @@
       secondary
       class="mb-4"
     />
+    <UnderlineButton
+      v-else-if="isProject"
+      text="View all projects »"
+      route="/projects"
+      secondary
+      class="mb-4"
+    />
   </div>
 </template>
 
@@ -41,9 +48,13 @@ export default {
       }
     }
     const isWork = props.title === "Work Experience";
+    const isProject = props.title === "Projects";
+    const isActivity = props.title === "Activities";
     return {
       items,
       isWork,
+      isProject,
+      isActivity,
     };
   },
 };
