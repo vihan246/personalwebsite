@@ -5,11 +5,10 @@
         <ProfileCard />
       </div>
     </div>
-    <div
-      class="container flex flex-col col-6 overflow-y-scroll no-scrollbar h-4/5"
-    >
+    <div class="container flex flex-col col-6 overflow-y-scroll h-4/5">
       <InfoSection title="Work Experience" />
       <InfoSection title="Projects" />
+      <InfoSection title="Activities" />
     </div>
   </div>
 </template>

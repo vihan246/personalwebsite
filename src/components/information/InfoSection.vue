@@ -21,6 +21,13 @@
       secondary
       class="mb-4"
     />
+    <UnderlineButton
+      v-else-if="isActivity"
+      text="View more »"
+      route="/activities"
+      secondary
+      class="mb-4"
+    />
   </div>
 </template>
 

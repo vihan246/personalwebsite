@@ -97,7 +97,11 @@
     },
     {
       "title": "Member @ USC Racing Electrical",
-      "type": "main"
+      "type": "main",
+      "startDate": "09-01-2021",
+      "endDate": "01-01-2023",
+      "shortDescription": "Worked on developing and integrating new systems as a member of the electronics team, primarily using a raspberry PI as the base for an electronic dashboard. More specifically, used a CAN bus to display sensor information onto an LCD screen.",
+      "link": "https://www.uscformulasae.com/"
     }
   ]
 }
