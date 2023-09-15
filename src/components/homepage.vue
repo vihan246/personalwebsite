@@ -5,7 +5,9 @@
         <ProfileCard />
       </div>
     </div>
-    <div class="container flex flex-col col-6 overflow-y-scroll h-4/5">
+    <div
+      class="container flex flex-col col-6 overflow-y-scroll h-4/5 no-scrollbar"
+    >
       <InfoSection title="Work Experience" />
       <InfoSection title="Projects" />
       <InfoSection title="Activities" />
