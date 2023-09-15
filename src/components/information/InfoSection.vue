@@ -17,14 +17,14 @@
     <UnderlineButton
       v-else-if="isProject"
       text="View all projects »"
-      route="/projects"
+      route="/"
       secondary
       class="mb-4"
     />
     <UnderlineButton
       v-else-if="isActivity"
       text="View more »"
-      route="/activities"
+      route="/"
       secondary
       class="mb-4"
     />
