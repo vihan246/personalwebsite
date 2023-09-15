@@ -14,6 +14,7 @@
       secondary
       class="mb-4"
     />
+    <!--
     <UnderlineButton
       v-else-if="isProject"
       text="View all projects »"
@@ -28,6 +29,7 @@
       secondary
       class="mb-4"
     />
+    -->
   </div>
 </template>
 

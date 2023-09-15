@@ -11,13 +11,14 @@
           route="./RESUME_Aug2023.pdf"
           @close="() => onOpenClose(false)"
         />
-        <UnderlineButton text="Projects" @close="() => onOpenClose(false)" />
+        <!--
+          <UnderlineButton text="Projects" @close="() => onOpenClose(false)" />
         <UnderlineButton text="Activities" @close="() => onOpenClose(false)" />
         <UnderlineButton
           text="About Me"
           @close="() => onOpenClose(false)"
           route="/about"
-        />
+        />-->
       </div>
     </div>
     <MenuButton :isOpen="open" @click="onOpenClose($event)" />
