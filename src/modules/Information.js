@@ -1,4 +1,6 @@
 const dayjs = require("dayjs");
+const customParseFormat = require("dayjs/plugin/customParseFormat");
+dayjs.extend(customParseFormat);
 const _ = require("lodash");
 const { nanoid } = require("nanoid");
 export default class Information {
@@ -15,11 +17,11 @@ export default class Information {
     this.id = nanoid(4);
     this.title = title;
     this.type = type;
-    this.startDate = dayjs(startDate, "DD-MM-YYYY").format("MMM YYYY");
+    this.startDate = dayjs(startDate, "MM-DD-YYYY").format("MMM YYYY");
     this.endDate =
       endDate === "Present"
         ? "Present"
-        : dayjs(endDate, "DD-MM-YYYY").format("MMM YYYY");
+        : dayjs(endDate, "MM-DD-YYYY").format("MMM YYYY");
     this.shortDescription = shortDescription;
     this.link = link;
     if (tags) {
