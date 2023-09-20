@@ -4,9 +4,9 @@ module.exports = {
   content: [],
   theme: {
     colors: {
-      background: "#FFF3D6",
+      background: "#F9F4F0",
       "background-dark": "#5D4032",
-      light: "#FFF3D6",
+      light: "#F9F4F0",
       dark: "#5D4032",
       pop: "#48A9A6",
       "pop-light": "#A9DBD8",
