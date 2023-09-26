@@ -8,7 +8,24 @@
   </div>
 </template>
 <script>
+import { onMounted } from "vue";
+import { useVideos } from "./useVideos";
 export default {
   name: "ProjectsPage",
+  props: {
+    title: {
+      type: String,
+      required: true,
+    },
+  },
+  setup() {
+    const video = useVideos();
+    onMounted(() => {
+      video.fetchVideo("portal_demo");
+    });
+    return {
+      video,
+    };
+  },
 };
 </script>

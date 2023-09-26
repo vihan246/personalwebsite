@@ -13,7 +13,16 @@
           "link": "https://developer.okta.com/docs/reference/scim/scim-20/"
         }
       ],
-      "tags": ["Node.JS", "Vue.JS", "TypeScript", "AWS", "JavaScript"]
+      "tags": [
+        "NodeJS",
+        "Vue",
+        "TypeScript",
+        "AWS",
+        "RESTful API",
+        "JavaScript",
+        "Jest",
+        "Cypress"
+      ]
     },
     {
       "title": "Full Stack SWE @ Haven",
@@ -22,14 +31,14 @@
       "endDate": "04-01-2023",
       "shortDescription": "Haven is a startup using AI to make home renovations easier for home-owners and contractors. Built out a MVP as a part of the founding team, winning the USC TroyLabs DEMO pitch competition. Attended USC MEPC startup incubator sessions and investor meetings.",
       "link": "https://www.joinhaven.io/",
-      "tags": ["Next.JS", "Tailwind", "SupaBase", "JavaScript"]
+      "tags": ["NextJS", "Tailwind", "SupaBase", "JavaScript"]
     },
     {
       "title": "Full Stack SWE Intern @ Productiv Inc.",
       "type": "main",
       "startDate": "06-01-2022",
       "endDate": "12-01-2022",
-      "shortDescription": "Developed a new integration with Fyle expense management to pull in and parse expenses. Standardized structure and usage of expenses in the back-end. Added contract validation, change detection, and flagging with alerting on the front-end.",
+      "shortDescription": "Worked on the finance team to add application features on the front end and back end using Scrum. Built a new integration with Fyle to pull in and parse expenses using REST APIs and OAuth2. Standardized expense usage in the backend. Implemented new features into contract ingestion processes, including automatically detecting changes using hash values and validation pop-ups for the user.",
       "link": "https://productiv.com/",
       "additionalLinks": [
         {
@@ -37,7 +46,15 @@
           "link": "https://docs.fylehq.com/"
         }
       ],
-      "tags": ["Node.JS", "Vue.JS", "AWS", "JavaScript"]
+      "tags": [
+        "NodeJS",
+        "Vue",
+        "AWS",
+        "RESTful API",
+        "JavaScript",
+        "Jest",
+        "Cypress"
+      ]
     },
     {
       "title": "International Baccaleaureate Tutor @ Valdo Academics",
