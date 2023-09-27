@@ -16,7 +16,7 @@ async function executeRequest(params) {
     body: JSON.stringify(params.bodyParams),
   });
   if (response.status == 200) {
-    return { data: await response.json() };
+    return await response.json();
   } else {
     throw new Error(await response.json());
   }

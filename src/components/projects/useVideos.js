@@ -9,8 +9,8 @@ export const useVideos = defineStore("videos", {
   actions: {
     async fetchVideo(title) {
       this.loading = true;
-      const { publicUrl } = await API.fetchVideo(title);
-      this.url = publicUrl;
+      const { data } = await API.fetchVideo(title);
+      this.url = data.publicUrl;
       this.loading = false;
     },
   },
