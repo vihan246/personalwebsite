@@ -1,7 +1,7 @@
 <template>
-  <div class="w-full h-auto">
+  <div>
     <div v-if="video.loading">loading...</div>
-    <video v-else :src="video.url" autoplay></video>
+    <video v-else :src="video.url" autoplay muted></video>
   </div>
 </template>
 
