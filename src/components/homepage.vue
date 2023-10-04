@@ -5,20 +5,48 @@
         <ProfileCard />
       </div>
     </div>
-    <div
-      class="container flex flex-col col-6 overflow-y-scroll h-4/5 no-scrollbar"
-    >
-      <InfoSection title="Work Experience" />
-      <InfoSection title="Projects" />
-      <InfoSection title="Activities" />
+    <div class="container flex flex-col-reverse col-6 h-full">
+      <div class="h-1/12 flex w-full my-5 justify-center">
+        <span
+          class="text-dark text-center animate-bounce transition-all duration-500"
+          :class="[showScroll ? 'text-dark' : 'text-background']"
+          >↓scroll↓</span
+        >
+      </div>
+      <div
+        class="container flex flex-col col-6 overflow-y-scroll h-4/5 no-scrollbar"
+        @scroll="(e) => onScroll(e)"
+      >
+        <InfoSection title="Work Experience" />
+        <InfoSection title="Projects" />
+        <InfoSection title="Activities" />
+      </div>
     </div>
   </div>
 </template>
 <script>
 import InfoSection from "./information/InfoSection.vue";
 import ProfileCard from "./ProfileCard.vue";
+import { ref } from "vue";
 export default {
   name: "HomePage",
   components: { ProfileCard, InfoSection },
+  setup() {
+    const showScroll = ref(true);
+    const onScroll = ({
+      target: { scrollTop, clientHeight, scrollHeight },
+    }) => {
+      if (scrollTop + clientHeight >= scrollHeight) {
+        console.log("bototom");
+        showScroll.value = false;
+      } else {
+        showScroll.value = true;
+      }
+    };
+    return {
+      showScroll,
+      onScroll,
+    };
+  },
 };
 </script>
