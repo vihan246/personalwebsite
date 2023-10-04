@@ -8,7 +8,7 @@
     <div class="container flex flex-col-reverse col-6 h-full">
       <div class="h-1/12 flex w-full my-5 justify-center">
         <span
-          class="text-dark text-center animate-bounce transition-all duration-500"
+          class="text-center animate-bounce transition-all duration-500"
           :class="[showScroll ? 'text-dark' : 'text-background']"
           >↓scroll↓</span
         >
@@ -36,8 +36,9 @@ export default {
     const onScroll = ({
       target: { scrollTop, clientHeight, scrollHeight },
     }) => {
+      console.log("scrool");
       if (scrollTop + clientHeight >= scrollHeight) {
-        console.log("bototom");
+        console.log("bottom");
         showScroll.value = false;
       } else {
         showScroll.value = true;
