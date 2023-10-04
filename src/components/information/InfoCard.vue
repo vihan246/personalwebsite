@@ -7,7 +7,12 @@
     </div>
     <div class="col-9 flex flex-col w-9/12">
       <h3 class="mb-2 text-large w-full">
-        <UnderlineButton :text="item.title" :route="item.link" secondary />
+        <UnderlineButton
+          :text="item.title"
+          :route="item.link"
+          secondary
+          arrow
+        />
       </h3>
       <div class="flex flex-wrap w-full mb-2">
         <TagPill
@@ -28,6 +33,7 @@
           :text="add.display"
           secondary
           class="text-sm mr-1 my-2"
+          arrow
         />
       </div>
     </div>

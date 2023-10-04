@@ -9,7 +9,7 @@
       "link": "https://productiv.com/",
       "additionalLinks": [
         {
-          "display": "Okta SCIM Docs »",
+          "display": "Okta SCIM Docs",
           "link": "https://developer.okta.com/docs/reference/scim/scim-20/"
         }
       ],
@@ -42,7 +42,7 @@
       "link": "https://productiv.com/",
       "additionalLinks": [
         {
-          "display": "Fyle Docs »",
+          "display": "Fyle Docs",
           "link": "https://docs.fylehq.com/"
         }
       ],

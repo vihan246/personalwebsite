@@ -6,7 +6,7 @@
     ]"
     @click="routeToPage"
   >
-    {{ text }}
+    {{ text }} {{ arrow ? "»" : "" }}
     <span
       class="block max-w-0 group-hover:max-w-full h-0.5 transition-all duration-500"
       :class="[
@@ -33,6 +33,10 @@ export default {
       default: "/",
     },
     secondary: {
+      type: Boolean,
+      default: false,
+    },
+    arrow: {
       type: Boolean,
       default: false,
     },

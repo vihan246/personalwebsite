@@ -9,10 +9,11 @@
     />
     <UnderlineButton
       v-if="isWork"
-      text="View full resume »"
+      text="View full resume"
       route="./RESUME_Aug2023.pdf"
       secondary
       class="mb-4"
+      arrow
     />
     <!--
     <UnderlineButton
