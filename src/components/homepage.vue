@@ -36,9 +36,7 @@ export default {
     const onScroll = ({
       target: { scrollTop, clientHeight, scrollHeight },
     }) => {
-      console.log("scrool");
       if (scrollTop + clientHeight >= scrollHeight) {
-        console.log("bottom");
         showScroll.value = false;
       } else {
         showScroll.value = true;
