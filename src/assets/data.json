@@ -89,7 +89,7 @@
       "type": "main",
       "startDate": "08-01-2023",
       "endDate": "09-01-2023",
-      "shortDescription": "A customizable Vue3 component that provides an inline typewriter effect, with functionality like allowing a list of strings, humanization, and more.",
+      "shortDescription": "A customizable Vue3 component that provides an inline typewriter effect, with functionality like allowing a list of strings, humanization, and more. An example of this can be seen on this website's landing page!",
       "link": "https://github.com/vihan246/vue-typewriter",
       "tags": ["Vue.JS", "JavaScript"]
     },
