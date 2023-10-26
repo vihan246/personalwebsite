@@ -10,7 +10,7 @@
     <UnderlineButton
       v-if="isWork"
       text="View full resume"
-      route="./RESUME_Aug2023.pdf"
+      route="./RESUME_Oct2023.pdf"
       secondary
       class="mb-4"
       arrow

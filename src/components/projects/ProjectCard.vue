@@ -1,13 +1,16 @@
 <template>
-  <div class="aspect-video">
-    <div v-if="video.loading">loading...</div>
-    <video
-      class="outline-none absolute top-0 left-0 w-full h-full"
-      v-else
-      :src="video.url"
-      autoplay
-      muted
-    ></video>
+  <div class="flex flex-col items-center">
+    <div class="w-5/6 aspect-video">
+      <div v-if="video.loading">loading...</div>
+      <video
+        class="outline-none w-full h-full"
+        v-else
+        :src="video.url"
+        autoplay
+        loop
+        muted
+      ></video>
+    </div>
   </div>
 </template>
 

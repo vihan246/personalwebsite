@@ -8,7 +8,7 @@
         <UnderlineButton text="Home" @close="() => onOpenClose(false)" />
         <UnderlineButton
           text="Resume"
-          route="./RESUME_Aug2023.pdf"
+          route="./RESUME_Oct2023.pdf"
           @close="() => onOpenClose(false)"
         />
         <!--
