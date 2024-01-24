@@ -32,6 +32,17 @@ async function fetchVideo(title) {
   });
 }
 
+async function fetchLogo(title) {
+  return executeRequest({
+    endpoint: "/.netlify/functions/fetch-logo",
+    method: "GET",
+    queryParams: {
+      logo: title,
+    },
+  });
+}
+
 module.exports = {
   fetchVideo,
+  fetchLogo,
 };

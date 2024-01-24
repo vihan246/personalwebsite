@@ -1,5 +1,5 @@
 <template>
-  <div class="flex w-fit h-fit gap-4" :class="{ 'flex-col': vertical }">
+  <div class="flex w-fit h-fit gap-4 flex-row mx-auto md:mx-0 md:flex-col">
     <a
       href="https://github.com/vihan246"
       class="w-8 h-8 mx-4 group"
@@ -8,7 +8,7 @@
       <svg
         viewBox="0 0 98 96"
         xmlns="http://www.w3.org/2000/svg"
-        class="fill-background-dark group-hover:fill-pop transition duration-300"
+        class="fill-background-light group-hover:fill-pop transition duration-300"
       >
         <path
           fill-rule="evenodd"
@@ -26,7 +26,7 @@
       <svg
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
-        class="fill-background-dark group-hover:fill-pop transition duration-300"
+        class="fill-background-light group-hover:fill-pop transition duration-300"
       >
         <path
           d="M6.5 8C7.32843 8 8 7.32843 8 6.5C8 5.67157 7.32843 5 6.5 5C5.67157 5 5 5.67157 5 6.5C5 7.32843 5.67157 8 6.5 8Z"
@@ -54,7 +54,7 @@
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        class="stroke-background-dark stroke-2 group-hover:stroke-pop transition duration-300"
+        class="stroke-background-light stroke-2 group-hover:stroke-pop transition duration-300"
       >
         <path
           d="M 19.5 9.143 L 16.533 10.555 C 14.878 11.344 14.051 11.737 13.175 11.892 C 12.4 12.028 11.6 12.028 10.825 11.892 C 9.949 11.737 9.122 11.344 7.467 10.555 L 4.5 9.143 M 7.166 17 L 16.834 17 C 17.767 17 18.233 17 18.59 16.845 C 18.904 16.707 19.159 16.489 19.318 16.22 C 19.5 15.915 19.5 15.515 19.5 14.715 L 19.5 9.285 C 19.5 8.485 19.5 8.085 19.318 7.78 C 19.159 7.511 18.904 7.293 18.59 7.155 C 18.233 7 17.767 7 16.834 7 L 7.166 7 C 6.233 7 5.767 7 5.41 7.155 C 5.096 7.293 4.841 7.511 4.682 7.78 C 4.5 8.085 4.5 8.485 4.5 9.285 L 4.5 14.715 C 4.5 15.515 4.5 15.915 4.682 16.22 C 4.841 16.489 5.096 16.707 5.41 16.845 C 5.767 17 6.233 17 7.166 17 Z"

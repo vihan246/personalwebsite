@@ -13,6 +13,7 @@ export default class Information {
     link,
     tags = undefined,
     additionalLinks = undefined,
+    logo = undefined,
   }) {
     this.id = nanoid(4);
     this.title = title;
@@ -34,5 +35,6 @@ export default class Information {
         return { id: nanoid(4), display: item.display, link: item.link };
       });
     }
+    this.logo = logo;
   }
 }

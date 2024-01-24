@@ -1,11 +1,19 @@
 <template>
-  <div class="flex w-full h-fit my-4 rounded-md">
-    <div class="col-3 w-3/12 flex flex-col">
-      <span class="text-dark text-left text-sm mb-2 pt-0.5"
+  <div
+    class="flex flex-col md:flex-row w-full h-fit my-4 rounded-md justify-between"
+  >
+    <div class="w-full md:w-3/12 flex flex-col md:pr-4 mb-2 md:mb-0">
+      <span class="text-light text-left text-sm mb-2 pt-0.5"
         >{{ item.startDate }} - {{ item.endDate }}</span
       >
+      <div class="w-full h-auto" v-if="title">
+        <img
+          :src="logo.logoUrls.get(title)"
+          class="w-auto h-auto md:mx-0 mx-auto max-h-64"
+        />
+      </div>
     </div>
-    <div class="col-9 flex flex-col w-9/12">
+    <div class="flex flex-col md:w-9/12 w-full">
       <h3 class="mb-2 text-large w-full">
         <UnderlineButton
           :text="item.title"
@@ -23,7 +31,7 @@
           class="mx-1 my-1"
         />
       </div>
-      <p class="text-dark text-sm">{{ item.shortDescription }}</p>
+      <p class="text-light text-sm">{{ item.shortDescription }}</p>
       <div class="flex w-full p-1">
         <UnderlineButton
           v-for="(add, ind) in item.additionalLinks"
@@ -40,8 +48,10 @@
   </div>
 </template>
 <script>
+import { onMounted } from "vue";
 import UnderlineButton from "../UnderlineButton.vue";
 import TagPill from "./TagPill.vue";
+import { useLogo } from "@/modules/useLogo";
 export default {
   name: "InfoCard",
   components: { UnderlineButton, TagPill },
@@ -50,6 +60,15 @@ export default {
       type: Object,
       required: true,
     },
+  },
+  setup(props) {
+    const logo = useLogo();
+    onMounted(() => {
+      if (props.item.logo) {
+        logo.fetchLogo(props.item.logo);
+      }
+    });
+    return { logo, title: props.item.logo };
   },
 };
 </script>

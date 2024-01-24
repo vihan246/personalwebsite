@@ -1,5 +1,5 @@
 import { defineStore } from "pinia";
-const API = require("../../API.js");
+const API = require("../API.js");
 
 export const useVideos = defineStore("videos", {
   state: () => ({

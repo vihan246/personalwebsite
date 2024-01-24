@@ -7,6 +7,7 @@
       "endDate": "08-01-2023",
       "shortDescription": "Developed new features to improve the security and corruption detection of contract data uploading. Created new UI components, developed SCIM endpoints, and extended existing user permissions structures to allow for custom permissions management in product and with Okta SAML. Added logging and a user display for the customer's user settings.",
       "link": "https://productiv.com/",
+      "logo": "Productiv_logo.png",
       "additionalLinks": [
         {
           "display": "Okta SCIM Docs",
@@ -31,6 +32,7 @@
       "endDate": "04-01-2023",
       "shortDescription": "Haven is a startup using AI to make home renovations easier for home-owners and contractors. Built out a MVP as a part of the founding team, winning the USC TroyLabs DEMO pitch competition. Attended USC MEPC startup incubator sessions and investor meetings.",
       "link": "https://www.linkedin.com/company/joinhavenio/",
+      "logo": "joinhavenio_logo.jpeg",
       "tags": ["NextJS", "Tailwind", "SupaBase", "JavaScript"]
     },
     {
@@ -40,6 +42,7 @@
       "endDate": "12-01-2022",
       "shortDescription": "Worked on the finance team to add application features on the front end and back end using Scrum. Built a new integration with Fyle to pull in and parse expenses using REST APIs and OAuth2. Standardized expense usage in the backend. Implemented new features into contract ingestion processes, including automatically detecting changes using hash values and validation pop-ups for the user.",
       "link": "https://productiv.com/",
+      "logo": "Productiv_logo.png",
       "additionalLinks": [
         {
           "display": "Fyle Docs",
@@ -109,6 +112,7 @@
       "type": "main",
       "startDate": "12-01-2021",
       "endDate": "Present",
+      "logo": "TT_logo.png",
       "shortDescription": "Theta Tau is the nation’s oldest and largest professional engineering society, aimed at the development of its members through the pillars of service, professionalism, and brotherhood. Currently in my second tenure as a social chair.",
       "link": "https://www.uscthetatau.org/"
     },
@@ -117,6 +121,7 @@
       "type": "main",
       "startDate": "09-01-2021",
       "endDate": "01-01-2023",
+      "logo": "usc_racing_logo.jpeg",
       "shortDescription": "Worked on developing and integrating new systems as a member of the electronics team, primarily using a raspberry PI as the base for an electronic dashboard. More specifically, used a CAN bus to display sensor information onto an LCD screen.",
       "link": "https://www.uscformulasae.com/"
     }

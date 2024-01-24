@@ -2,7 +2,7 @@
   <button
     class="group bg-transparent w-fit whitespace-nowrap transition-all duration-500"
     :class="[
-      secondary ? 'hover:text-pop-light text-pop' : 'hover:text-pop text-light',
+      secondary ? 'hover:text-pop-light text-pop' : 'hover:text-pop text-dark',
     ]"
     @click="routeToPage"
   >
@@ -12,7 +12,7 @@
       :class="[
         secondary
           ? 'group-hover:bg-pop-light bg-pop'
-          : 'group-hover:bg-pop bg-light',
+          : 'group-hover:bg-pop bg-dark',
       ]"
     ></span>
   </button>

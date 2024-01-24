@@ -2,7 +2,7 @@
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 -960 960 960"
-    class="fill-dark text-dark w-12 h-12 transition duration-300 hover:fill-pop m-2"
+    class="fill-light text-light w-12 h-12 transition duration-300 hover:fill-pop m-2"
     :class="{ 'rotate-180': isOpen }"
     @click="onClick"
   >

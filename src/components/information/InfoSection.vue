@@ -1,6 +1,6 @@
 <template>
   <div class="w-full flex flex-col h-fit mb-2">
-    <h2 class="text-dark text-2xl">{{ title }}</h2>
+    <h2 class="text-light text-2xl">{{ title }}</h2>
     <InfoCard
       v-for="(item, index) in items"
       :item="item"

@@ -16,7 +16,7 @@
 
 <script>
 import { onMounted } from "vue";
-import { useVideos } from "./useVideos";
+import { useVideos } from "../../modules/useVideos";
 
 export default {
   name: "ProjectCard",

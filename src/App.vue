@@ -1,15 +1,15 @@
 <template>
-  <div className="w-screen h-screen bg-background flex">
+  <div className="w-screen h-screen bg-background flex flex-col md:flex-row">
     <Transition
       leave-to-class="opacity-0"
       leave-active-class="transition duration-700"
     >
       <div
         v-if="showLanding"
-        class="h-full w-full flex justify-center items-center absolute top-0 left-0 z-50 bg-background-dark"
+        class="h-screen w-screen flex justify-center items-center absolute top-0 left-0 z-50 bg-background-light"
       >
         <TypeWriter
-          class="text-light text-left text-4xl w-44"
+          class="text-dark text-left text-4xl w-44"
           cursor
           text="Vihan Raj"
           @done="
@@ -20,12 +20,18 @@
         />
       </div>
     </Transition>
-    <div class="col-1 h-full w-1/12"><SideBar /></div>
-    <div class="col-10 h-full w-10/12"><router-view></router-view></div>
+    <div class="h-full w-1/12 hidden md:block"><SideBar /></div>
     <div
-      class="col-1 flex h-full w-1/12 flex-col-reverse justify-start items-end py-4"
+      class="h-10/12 md:h-full w-full md:w-10/12"
+      :class="[showLanding ? 'hidden' : 'block']"
     >
-      <SocialIcons vertical />
+      <router-view></router-view>
+    </div>
+    <div
+      class="h-1/12 w-full md:h-full md:w-1/12 flex-col-reverse md:justify-start md:items-end py-4"
+      :class="[showLanding ? 'hidden' : 'flex']"
+    >
+      <SocialIcons />
     </div>
   </div>
 </template>
