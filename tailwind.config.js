@@ -4,12 +4,12 @@ module.exports = {
   content: [],
   theme: {
     colors: {
-      background: "#20201D",
-      "background-light": "#E0DFD5",
-      light: "#E0DFD5",
-      dark: "#20201D",
-      pop: "#48A9A6",
-      "pop-light": "#A9DBD8",
+      background: "#5D4032",
+      "background-light": "#F9F4F0",
+      light: "#F9F4F0",
+      dark: "#5D4032",
+      pop: "#229BD3",
+      "pop-light": "#61BBE5",
     },
     extend: {},
   },
