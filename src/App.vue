@@ -22,16 +22,10 @@
     </Transition>
     <div class="h-full w-1/12 hidden md:block"><SideBar /></div>
     <div
-      class="h-10/12 md:h-full w-full md:w-10/12"
+      class="h-11/12 md:h-full w-full md:w-11/12"
       :class="[showLanding ? 'hidden' : 'block']"
     >
       <router-view></router-view>
-    </div>
-    <div
-      class="h-1/12 w-full md:h-full md:w-1/12 flex-col-reverse md:justify-start md:items-end py-4"
-      :class="[showLanding ? 'hidden' : 'flex']"
-    >
-      <SocialIcons />
     </div>
   </div>
 </template>
@@ -40,11 +34,10 @@
 import "./index.css";
 import SideBar from "./components/sidebar/SideBar.vue";
 import TypeWriter from "./components/TypeWriter.vue";
-import SocialIcons from "./components/SocialIcons.vue";
 import { ref } from "vue";
 export default {
   name: "App",
-  components: { SideBar, TypeWriter, SocialIcons },
+  components: { SideBar, TypeWriter },
   setup() {
     const landingDisplay = ref("_");
     const showLanding = ref(true);

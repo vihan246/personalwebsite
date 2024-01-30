@@ -8,6 +8,7 @@
       <div class="w-10/12 flex flex-col h-1/2 md:mt-24 items-center">
         <ProfileCard />
       </div>
+      <SocialIcons class="mt-auto md:mb-10 mx-auto md:mx-0" />
     </div>
     <div
       class="container flex flex-col-reverse w-full h-7/12 md:h-full md:w-7/12"
@@ -33,10 +34,11 @@
 <script>
 import InfoSection from "./information/InfoSection.vue";
 import ProfileCard from "./ProfileCard.vue";
+import SocialIcons from "./SocialIcons.vue";
 import { ref } from "vue";
 export default {
   name: "HomePage",
-  components: { ProfileCard, InfoSection },
+  components: { ProfileCard, InfoSection, SocialIcons },
   setup() {
     const showScroll = ref(true);
     const onScroll = ({

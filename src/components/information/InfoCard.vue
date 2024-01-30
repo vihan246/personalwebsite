@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col md:flex-row w-full h-fit my-4 rounded-md justify-between"
+    class="flex flex-col md:flex-row w-full h-fit my-4 rounded-md justify-between p-4 border border-dark-light hover:shadow-custom transition duration-300"
   >
     <div class="w-full md:w-3/12 flex flex-col md:pr-4 mb-2 md:mb-0">
       <span class="text-light text-left text-sm mb-2 pt-0.5"
@@ -9,7 +9,7 @@
       <div class="w-full h-auto" v-if="title">
         <img
           :src="logo.logoUrls.get(title)"
-          class="w-auto h-auto md:mx-0 mx-auto max-h-64"
+          class="w-auto h-auto md:mx-0 mx-auto max-h-64 rounded-sm"
         />
       </div>
     </div>
@@ -68,6 +68,7 @@ export default {
         logo.fetchLogo(props.item.logo);
       }
     });
+
     return { logo, title: props.item.logo };
   },
 };

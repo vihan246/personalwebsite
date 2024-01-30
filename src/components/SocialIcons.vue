@@ -1,5 +1,5 @@
 <template>
-  <div class="flex w-fit h-fit gap-4 flex-row mx-auto md:mx-0 md:flex-col">
+  <div class="flex w-fit h-fit gap-4 flex-row">
     <a
       href="https://github.com/vihan246"
       class="w-8 h-8 mx-4 group"

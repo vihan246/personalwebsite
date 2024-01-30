@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full flex flex-col h-fit mb-2">
+  <div class="w-full flex flex-col h-fit mb-2 px-5">
     <h2 class="text-light text-2xl">{{ title }}</h2>
     <InfoCard
       v-for="(item, index) in items"
@@ -7,6 +7,7 @@
       :index="index"
       :key="item.id"
     />
+    <!--
     <UnderlineButton
       v-if="isWork"
       text="View full resume"
@@ -15,6 +16,7 @@
       class="mb-4"
       arrow
     />
+    -->
     <!--
     <UnderlineButton
       v-else-if="isProject"
@@ -38,12 +40,11 @@
 import data from "../../assets/data.json";
 import InfoCard from "./InfoCard.vue";
 import Information from "../../modules/Information";
-import UnderlineButton from "../UnderlineButton.vue";
 import { ref } from "vue";
 
 export default {
   name: "InfoSection",
-  components: { InfoCard, UnderlineButton },
+  components: { InfoCard },
   props: {
     title: {
       type: String,
