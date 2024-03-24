@@ -15,7 +15,7 @@
     <UnderlineButton
       class="text-xl"
       text="Resume »"
-      route="./RESUME_Oct2023.pdf"
+      route="./RESUME_C.pdf"
       secondary
     />
   </div>
