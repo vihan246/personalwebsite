@@ -5,11 +5,11 @@
       "type": "main",
       "startDate": "04-01-2024",
       "endDate": "Present",
-      "shortDescription": "Implementing new product functionality and polishing front-end components.",
+      "shortDescription": "Leveraged Google Address Autocomplete to cut address lookup time in half. Implementing new UI functionality and polishing front-end components.",
       "link": "https://franklinjunction.com/",
       "logo": "franklinjunction_logo.jpeg",
       "tags": [
-        "React",
+        "React.js",
         "Next.js",
         "Tailwind",
         "Node.js",
@@ -68,8 +68,8 @@
         }
       ],
       "tags": [
-        "NodeJS",
-        "Vue",
+        "Node.js",
+        "Vue.js",
         "AWS",
         "RESTful API",
         "JavaScript",

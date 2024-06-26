@@ -15,7 +15,7 @@
     <UnderlineButton
       class="text-xl"
       text="Resume »"
-      route="./RESUME_C.pdf"
+      route="./RAJ_VIHAN_RESUME_JUN2024.pdf"
       secondary
     />
   </div>
